@@ -45,28 +45,35 @@ contract DelawareCorporation {
         uint entityId;
     }
     
-    struct approval {
-        bool boardApproval;
-        bool stockholderApproval;
-        bool otherApproval;
-        string contents;
-    }
-    
+    enum approvalType {board, stockholder, other}
+  
     struct corporateAction {
-        DateTime corporateActionDateTime;
+        DateTime corporateActionDate;
         Entity[] actors;
         string actionDescription;
         string[] contents;
-        approval[] approvals;
+        approvalType[] approvals;
+    }
+    
+    struct shareClass {
+        string name;
+    }
+    
+    struct shareCert {
+        shareClass shareCertClass;
+        Entity holder;
+        DateTime issuanceDate;
+        approval[] issuanceApproval;
     }
     
     struct corporation {
         Entity incorporator;
         Entity[] boardOfDirectors;
-        Entity[] stockholders;
         Entity[] advisors;
+        Entity[] officers;
         irlContract[] corpContracts;
         corporateAction[] corporateActions;
+        shareCert[] stockLedger;
     }
     
 }
