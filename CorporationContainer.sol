@@ -48,6 +48,7 @@ contract DelawareCorporation {
     struct approval {
         bool boardApproval;
         bool stockholderApproval;
+        bool otherApproval;
         string contents;
     }
     
