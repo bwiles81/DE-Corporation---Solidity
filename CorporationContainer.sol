@@ -38,11 +38,12 @@ contract DelawareCorporation {
         string name;
         string jxnOfIncorp;
         MailingAddress entityMailingAddress;
-        BusinessAddress entityBusinessAddress;
-        NoticeAddress entityNoticeAddress;
-        address entityAddress;
+        MailingAddress entityBusinessAddress;
+        MailingAddress entityNoticeAddress;
+        address entityEthAddress;
         bool accreditedInvestor;
         uint entityId;
+        string email;
     }
     
     enum approvalType {board, stockholder, other}
@@ -63,7 +64,8 @@ contract DelawareCorporation {
         shareClass shareCertClass;
         Entity holder;
         DateTime issuanceDate;
-        approval[] issuanceApproval;
+        corporateAction[] shareCertActions;
+        irlContract[] shareCertInstruments;
     }
     
     struct corporation {
