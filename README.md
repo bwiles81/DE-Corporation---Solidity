@@ -2,7 +2,7 @@
 Solidity code library (a) representing data associated with a Delaware corporation and (b) (aspirationally) containing functions that use such data structures.
 
 # License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 # Disclaimer
 The contents of this project are intended to convey general information only and not to provide legal advice or opinions. The contents of this project, and the posting and viewing of the information with respect to this project, should not be construed as, and should not be relied upon for, legal or tax advice in any particular circumstance or fact situation.  The information presented with respect to this project may not reflect the most current legal developments.  No action should be taken in reliance on the information contained in this project and the author disclaims all liability in respect to actions taken or not taken based on any or all of the contents of this project to the fullest extent permitted by law.  An attorney should be contacted for advice on specific legal issues.
